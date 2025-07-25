@@ -1,8 +1,6 @@
 import os
 import numpy as np
 import rasterio
-import sys
-import argparse
 
 
 

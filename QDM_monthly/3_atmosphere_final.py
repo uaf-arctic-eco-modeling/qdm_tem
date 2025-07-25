@@ -3,7 +3,6 @@ import os
 import zipfile
 import pandas as pd
 import xarray as xr
-import matplotlib.pyplot as plt
 import numpy as np
 
 indir='/Volumes/5TIII/TEST_INPUT_SET/data'

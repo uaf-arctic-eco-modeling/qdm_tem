@@ -7,15 +7,12 @@
 
 
 #import requests
-import os
-import shutil
 #import zipfile
 import pandas as pd
 import xarray as xr
 import numpy as np
 from pyproj import Transformer
 
-import sys
 import argparse
 
 parser = argparse.ArgumentParser(description='Argument description')

@@ -1,17 +1,7 @@
 import os
 import xarray as xr
 import pandas as pd
-import shutil
 import numpy as np
-import sys
-import matplotlib.pyplot as plt
-import datetime
-import math
-import cdsapi
-from cmethods import adjust
-from cmethods.distribution import detrended_quantile_mapping
-import gc
-
 
 ### Import information from shell
 out_path = os.getenv('outdir')

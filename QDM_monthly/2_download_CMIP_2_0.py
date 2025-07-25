@@ -7,7 +7,6 @@
 
 
 import cdsapi
-import requests
 import os
 
 

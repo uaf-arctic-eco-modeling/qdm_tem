@@ -4,7 +4,6 @@ import os
 import pandas as pd
 import rasterio
 from rasterio import features
-from affine import Affine
 
 cntrypath = os.getenv('cntrypath')
 cntryrst = os.getenv('cntryrst')

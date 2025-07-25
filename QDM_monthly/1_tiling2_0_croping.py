@@ -6,9 +6,7 @@
 ### Command: $ 
 
 
-import os
 import xarray as xr
-import sys
 import argparse
 
 parser = argparse.ArgumentParser(description='Argument description')
