@@ -190,10 +190,10 @@ clmt['tair'].attrs={'standard_name':'air_temperature','units':'celsius','grid_ma
 clmt['precip'].attrs={'standard_name':'precipitation_amount','units':'mm month-1','grid_mapping':'albers_conical_equal_area','_FillValue': -999.0}
 clmt['nirr'].attrs={'standard_name':'downwelling_shortwave_flux_in_air','units':'W m-2','grid_mapping':'albers_conical_equal_area','_FillValue': -999.0}
 clmt['vapor_press'].attrs={'standard_name':'water_vapor_pressure','units':'hPa','grid_mapping':'albers_conical_equal_area','_FillValue': -999.0}
-clmt['time'].attrs={'units':'days since 1901-1-1 0:0:0','long_name':'time','calendar':'365_day'}
-clmt.time.encoding['units'] = 'days since 1901-01-01 00:00:00'
-clmt.time.encoding['calendar'] = '365_day'
-clmt.time.encoding['long_name'] = 'time'
+#clmt['time'].attrs={'units':'days since 1901-1-1 0:0:0','long_name':'time','calendar':'365_day'}
+#clmt.time.encoding['units'] = 'days since 1901-01-01 00:00:00'
+#clmt.time.encoding['calendar'] = '365_day'
+#clmt.time.encoding['long_name'] = 'time'
 clmt.to_netcdf(os.path.join(out_path,'input','historic-climate_gf.nc'),unlimited_dims='time')
 
 
@@ -220,9 +220,9 @@ for mod in modlist:
 		clmt['precip'].attrs={'standard_name':'precipitation_amount','units':'mm month-1','grid_mapping':'albers_conical_equal_area','_FillValue': -999.0}
 		clmt['nirr'].attrs={'standard_name':'downwelling_shortwave_flux_in_air','units':'W m-2','grid_mapping':'albers_conical_equal_area','_FillValue': -999.0}
 		clmt['vapor_press'].attrs={'standard_name':'water_vapor_pressure','units':'hPa','grid_mapping':'albers_conical_equal_area','_FillValue': -999.0}
-		clmt['time'].attrs={'units':'days since 1901-1-1 0:0:0','long_name':'time','calendar':'365_day'}
-		clmt.time.encoding['units'] = 'days since 1901-01-01 00:00:00'
-		clmt.time.encoding['calendar'] = '365_day'
-		clmt.time.encoding['long_name'] = 'time'
+		#clmt['time'].attrs={'units':'days since 1901-1-1 0:0:0','long_name':'time','calendar':'365_day'}
+		#clmt.time.encoding['units'] = 'days since 1901-01-01 00:00:00'
+		#clmt.time.encoding['calendar'] = '365_day'
+		#clmt.time.encoding['long_name'] = 'time'
 		clmt.to_netcdf(os.path.join(out_path,'input/projected-climate_' + sc + '_' + mod + '_gf.nc'),unlimited_dims='time')
 
